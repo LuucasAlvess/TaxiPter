@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    list-style: none;
-    scroll-behavior: smooth;
+:root {
+    --bg-primary: #000000;
+    --text-light: #FFFFFF;
+    --text-dark: #1D1D1F;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+    --spirited-main-color: #DED2B9;
 }
+
+
 body {
     font-family: "Poppins", sans-serif;
     --color1: #FFF ;
@@ -27,36 +23,52 @@ body {
    /* HEADER MENU */
 
 header{
-    background: no-repeat center/cover url('/assets/images/11.jpg');
-    height: calc(100vh - 450px);
-
+    /* background: no-repeat center/cover url('/assets/images/11.jpg'); */
+    height: calc(100vh - 35rem);
 }
+
 
 .nav-bar {
+    position: fixed;
+    top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    padding: 2rem 0;
     align-items: center;
-    list-style: none;
-    position: relative;
-    padding: 5rem 10rem;
-    
+    justify-content: space-around;
+    background-color: var(--text-dark);
+    z-index: 1000; /* Para garantir que o menu esteja acima de outros elementos */
 }
-.logo img {width: 180px; justify-content: flex-start;
+
+.logo img {width: 180px; justify-content: flex-start;}
+
+.menu {
+    display: flex;
 }
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
+
+.menu li {
+    padding-left: 30px;
+}
+
 .menu li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
     display: inline-block;
     text-decoration: none;
-    color: var(--color2);
+    color: var(--color1);
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
 }
 
-.menu li:nth-child(){font-weight: bold;}
+.menu li:nth-child(4) a {
+    background-color: var(--title-primary-color);
+    color: black;
+    border-radius: 4px;
+    position: relative;
+    
+}
 
 .menu li a::after {
     content: "";
@@ -68,7 +80,13 @@ header{
     background-color: var(--color2);
     transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;}
+
+.menu li a:hover {
+    color: var(--action-color);
+    width: 100%;
+}
+
+
 .open-menu , .close-menu {
     position: absolute;
     color: var(--color2);
@@ -88,35 +106,99 @@ header{
 #check {display: none;}
 
 
+.carousel {
+    width: 100%;
+    height: 100vh;
+}
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+ 
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 100ms;
+
+    
+  }
+  
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    top: 40%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0px 0.5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+.carousel-button:hover,.carousel-button:focus {background-color: var(--text-dark);}
+.carousel-button:focus {
+    outline: 1px solid black;
+  }
+.carousel-button.prev {left: 1rem;}  
+.carousel-button.next {right: 1rem;}
+  
+
+
+.container-header{
+    display: flex;
+}
 
     /* PRIMEIRO TOPICO DO SITE */
 
 .topicFirst h1, .topicTwo h1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     display: flex;
     text-align: center;
     justify-content: center;
     padding: 60px;
-    color: var(--color1);
+    color: var(--text-dark);
 }
 
 .topicFirst h2{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     display: flex;
     justify-content: center;
-    color: var(--color1);
+    color: var(--text-dark);
     }
 
 
 .topicFirst p, .topicTwo p{
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Popins', sans-serif;
     font-size: 16px;
     margin: 2rem 8rem 2rem 6rem;
     padding: 2rem 2rem 2rem 2rem;
     text-align: justify;
-    color: #EBEBEB;
+    color: var(--text-dark)
 }
 
 .topicFirst{
@@ -124,7 +206,7 @@ header{
     display: flex;
     justify-content: center; */
     /* margin-bottom: 20px; */
-    background-color: var(--color7);
+    background-color: var(--color6);
     padding: 2rem;
 
 }
@@ -148,7 +230,7 @@ header{
 
     /* topico parte 2 energia renovavel */
 .topicTwo{
-    background-color: var(--color2);
+    background-color: var(--color6);
     padding: 1vh;
    
 }
@@ -167,25 +249,25 @@ header{
 } */
 
 .topicThree h1{
-    font-family: 'Langar', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     display: flex;
     text-align: center;
     justify-content: flex-start;
     padding: 5vh;
     margin: 0rem 0 -8rem 22rem;
-    color: var(--color1);
+    color: var(--text-dark);
 }
 
 .topicThree p{
-    font-family: 'Laila', sans-serif;
+    font-family: 'Popins', sans-serif;
     font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 53%;
     text-align: center;
-    color: var(--color1);
+    color: var(--text-dark);
 }
 
 .topicThree{
@@ -202,7 +284,7 @@ header{
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: center;
-    background-color: var(--color7);
+    background-color: var(--color6);
 }
 
 
@@ -246,26 +328,14 @@ footer a {
     font-family: 'Laila', sans-serif;
     cursor: pointer;
 }
-footer a:hover{
-    color: var(--color4);
-    
-    cursor: pointer;
-    
-}
 
-footer p{
-    color: var(--color1);
-    font-size: 12px;
-}
+footer a:hover{color: var(--color4);cursor: pointer;}
+footer p{color: var(--color1);font-size: 12px;}
+footer div:nth-child(2) {margin-top: 2rem;}
 
-/* footer > div > a {
-    color: #6b6b6b;
-    padding: 2rem;
-} */
 
-footer div:nth-child(2) {
-    margin-top: 2rem;
-}
+
+
 
 
 
