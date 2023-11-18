@@ -1,16 +1,12 @@
 :root {
     --bg-primary: #000000;
+    --bg-secundary: #00143C;
     --text-light: #FFFFFF;
     --text-dark: #1D1D1F;
     --title-primary-color: #F5F5F7;
     --subtitle-color: #6E6E73;
     --action-color: #2997FF;
     --spirited-main-color: #DED2B9;
-}
-
-
-body {
-    font-family: "Poppins", sans-serif;
     --color1: #FFF ;
     --color2: #181818 ;
     --color3: #FFFFFF;
@@ -19,6 +15,21 @@ body {
     --color6: #EBEBEB;
     --color7: #393939;
 }
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* rolagem devagar */
+    scroll-behavior: smooth; 
+    /* deixa a fonte mais nitida */
+    -webkit-font-smoothing: antialiased;
+}
 
    /* HEADER MENU */
 
@@ -26,7 +37,7 @@ header{
     /* background: no-repeat center/cover url('/assets/images/11.jpg'); */
     height: calc(100vh - 35rem);
 }
-
+/* img{object-fit: contain;} */
 
 .nav-bar {
     position: fixed;
@@ -180,46 +191,50 @@ header{
     text-align: center;
     justify-content: center;
     padding: 60px;
-    color: var(--text-dark);
+    color: var(--text-light);
 }
 
-.topicFirst h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    color: var(--text-dark);
-    }
 
 
-.topicFirst p, .topicTwo p{
+.topicFirst p{
     font-family: 'Popins', sans-serif;
     font-size: 16px;
-    margin: 2rem 8rem 2rem 6rem;
-    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem 6rem 4rem 5rem;
+    padding: 1rem 3rem 2rem 2rem;
     text-align: justify;
-    color: var(--text-dark)
+    color: var(--text-light);
 }
 
 .topicFirst{
-    /* text-align: center;
-    display: flex;
-    justify-content: center; */
-    /* margin-bottom: 20px; */
-    background-color: var(--color6);
+    background-color: var(--bg-secundary);
     padding: 2rem;
 
 }
 .topicFirst img, .topicTwo img{
-    /* width: 350px;
-    height: 250px; */
-    width: 30%;
-    border-radius: 10px;
+ 
+    width:35%;
+    border-radius: 6px;
+}
+.topicTwo p{
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    margin: 4rem 7rem 4rem 6rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: justify;
+    color: var(--text-dark)
+}
+.topicTwo h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+    color: var(--text-dark);
 }
 .topicThree img{
-    width: 327px;
-    height: 300px;
-    border-radius: 10px;
+    width: 31%;
+    border-radius: 7px;
     margin: 35px;
 }
 .center{
@@ -231,32 +246,14 @@ header{
     /* topico parte 2 energia renovavel */
 .topicTwo{
     background-color: var(--color6);
-    padding: 1vh;
-   
 }
 
-/* .topicTwo h1{
-    font-size: 20px;
-    font-family: 'Langar', sans-serif;
-    ;
-
-
-} */
-/* .topicTwo img{
-    margin-top: 10rem;
-    width: 50%;
-    border-radius: 10%;
-} */
-
 .topicThree h1{
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    display: flex;
     text-align: center;
-    justify-content: flex-start;
-    padding: 5vh;
-    margin: 0rem 0 -8rem 22rem;
+    padding: 60px;
     color: var(--text-dark);
+    margin: 0rem 0 0rem -30rem;
 }
 
 .topicThree p{
@@ -271,11 +268,7 @@ header{
 }
 
 .topicThree{
-    /* display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-items: center; */
+    background-color: var(--text-light);
 }
 
 .Three{
@@ -284,7 +277,7 @@ header{
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: center;
-    background-color: var(--color6);
+    background-color: var(--text-light);
 }
 
 
@@ -329,7 +322,7 @@ footer a {
     cursor: pointer;
 }
 
-footer a:hover{color: var(--color4);cursor: pointer;}
+footer a:hover{color: var(--action-color);cursor: pointer;}
 footer p{color: var(--color1);font-size: 12px;}
 footer div:nth-child(2) {margin-top: 2rem;}
 
