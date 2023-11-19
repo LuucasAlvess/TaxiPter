@@ -21,7 +21,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
     font-family: "Poppins", sans-serif;
@@ -29,6 +29,13 @@ body {
     scroll-behavior: smooth; 
     /* deixa a fonte mais nitida */
     -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    font-family: 'Courier Prime', monospace; 
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
 }
 
    /* HEADER MENU */
@@ -97,6 +104,17 @@ header{
     width: 100%;
 }
 
+.button-login{
+    color: black;
+    background: #DED2B9;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 65px;
+    height: 26px;
+    right: 50px;
+    position: absolute;
+}
 
 .open-menu , .close-menu {
     position: absolute;
@@ -184,16 +202,15 @@ header{
 
     /* PRIMEIRO TOPICO DO SITE */
 
-.topicFirst h1, .topicTwo h1{
-    font-family: 'Roboto', sans-serif;
+.topicFirst h1{
+    /* font-family: 'Lato', sans-serif; */
     font-size: 24px;
     display: flex;
     text-align: center;
     justify-content: center;
     padding: 60px;
-    color: var(--text-light);
+    color: var(--color1);
 }
-
 
 
 .topicFirst p{
@@ -224,7 +241,8 @@ header{
     color: var(--text-dark)
 }
 .topicTwo h1{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
     font-size: 24px;
     display: flex;
     text-align: center;
@@ -254,6 +272,7 @@ header{
     padding: 60px;
     color: var(--text-dark);
     margin: 0rem 0 0rem -30rem;
+    /* font-family: 'Lato', sans-serif; */
 }
 
 .topicThree p{
@@ -325,6 +344,7 @@ footer a {
 footer a:hover{color: var(--action-color);cursor: pointer;}
 footer p{color: var(--color1);font-size: 12px;}
 footer div:nth-child(2) {margin-top: 2rem;}
+
 
 
 
