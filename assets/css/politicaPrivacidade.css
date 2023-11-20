@@ -1,0 +1,23 @@
+
+.politicaPrivacidade{
+    line-height: 2.1;
+    font-size: 15px;
+    text-align: justify;
+    width: 163vh;
+    left: 37px;
+    position: relative;
+}
+
+.politicaPrivacidade h1{
+    font-family: 'Courier Prime', monospace;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.politicaPrivacidade h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
