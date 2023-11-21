@@ -34,7 +34,7 @@ body {
 
 header{
     /* background: no-repeat center/cover url('/assets/images/11.jpg'); */
-    height: calc(100vh - 35rem);
+    /* height: calc(100vh - 35rem); */
     /* img{object-fit: contain;} */
 }
 
@@ -115,7 +115,7 @@ a > button:hover{
 
 .open-menu , .close-menu {
     position: absolute;
-    color: var(--color2);
+    color: var(--color1);
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
@@ -354,23 +354,125 @@ footer div:nth-child(2) {margin-top: 2rem;}
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 100%;
         height: 100vh;
         position: fixed;
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: var(--color3);
+        background-color: var(--bg-secundary);
         transition: all 0.2s ease-in-out;
     }
     .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
+    .menu li a {padding: 10px; font-size: 26px; color: var(--text-light);}
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
 
 @media (max-width: 650px){/*executa quando largura maxima da tela for ate 650px*/
+    body{
+        display: block;
+    }
 
+    a > button{
+        width: 10rem;
+        height: 3rem;
+        bottom: 80px;
+        position: absolute;
+        right: 25%;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--action-color);
+    }
+    
+    .slide > img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+    }
+
+
+    .carousel-button.prev {
+        left: 1rem;
+        margin-top: 50%;
+    }
+
+    .carousel-button.next {
+        right: 1rem;
+        margin-top: 50%;
+    }
+
+    
+
+.topicFirst p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+ 
+}
+
+.topicFirst > h1, .topicTwo > h1, .topicThree > h1{
+    display: block;
+    margin: 0;
+    font-size: 17px;
+}
+
+.topicTwo p{
+    margin: 0;
+    font-size: 16px;
+    width: 90%;
+    text-align: justify;
+}
+
+.topicThree img, .topicTwo img{
+    width: 80%;
+}
+
+.topicThree p{
+    display: flex;
+    padding: 11px;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 22px;
+    width: 80%;
+}
+
+.topicThree{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .topicThree > h1{
+    display: block;
+    margin: 0;
+    font-size: 17px;
+} */
+.Three{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-options{
+    display: inline-block;
+    
+}
+
+.footer-options a{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
 }
 
 
