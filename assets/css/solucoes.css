@@ -1,33 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .menu li:nth-child(2){
     font-weight: bold;
 }
 
-.center img{
-    margin-right: 20px;
-    width: 350px;
+.center img {
+    margin: 20px;
+    width: 100%;
+    border-radius: 23px;
     animation-duration: 1.5s;
     transition-duration: 0.3s;
     transition-delay: 0s;
 }
 
+
 .center img:hover{scale: 1.1; }
 
-.center{
+.center {
     margin: 4rem 5rem 10rem 2rem;
     text-align: justify;
-    justify-content: center;
     font-size: 16px;
-    font-family: 'Laila', sans-serif;
+    display: block;
 }
 
-.container h1{
-    font-family: 'Langar', sans-serif;
+.center p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.bgColor{
+    background-color: red;}
+
+.container > h1 {
+    font-family: 'Lato', sans-serif;
     font-size: 30px;
     text-align: center;
-    margin: 4rem 0 -10px 23rem;
+    margin-top: 12%;
 }
+.container h2{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    /* width: 70%; */
+    object-fit: cover;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 70%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }

@@ -38,3 +38,11 @@ function startInterval() {
 
 // Inicie o intervalo pela primeira vez
 startInterval();
+
+
+
+
+
+
+
+
