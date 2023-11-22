@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 .faq-heading{
-  border-bottom: #777;
+  margin-top: 9%;
   padding: 20px 60px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
 }
 .faq-container{
 display: flex;
@@ -12,10 +20,10 @@ width: 60%;
 margin: auto;
 
 }
-/* Style the buttons that are used to open and close the faq-page body */
+/* botões usados ​​para abrir e fechar */
 .faq-page {
   /* background-color: #eee; */
-  color: #444;
+  color: var(--text-dark);
   cursor: pointer;
   padding: 30px 20px;
   width: 60%;
@@ -23,35 +31,79 @@ margin: auto;
   outline: none;
   transition: 0.4s;
   margin: auto;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
-.faq-body{
-  margin: auto;
-  /* text-align: center; */
- width: 50%; 
- padding: auto;
- 
-}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* Adicione uma cor de fundo ao botão se ele for clicado (adicione a classe .active com JS) e quando você passar o mouse sobre ele (passar o mouse) */
 .active,
 .faq-page:hover {
   background-color: #F9F9F9;
 }
-/* Style the faq-page panel. Note: hidden by default */
+
+/* Estilize o painel da página de perguntas frequentes. Nota: oculto por padrão */
 .faq-body {
+  margin: auto;
+  width: 54%; 
+  display: none;
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  /* text-align: center;
+  padding: auto;
   padding: 0 18px;
   background-color: white;
-  display: none;
-  overflow: hidden;
+  overflow: hidden; */
 }
+
 .faq-page:after {
   content: '\02795';
-  /* Unicode character for "plus" sign (+) */
+  /* caractere sinal (+) */
   font-size: 13px;
   color: #777;
   float: right;
   margin-left: 5px;
 }
+
+
 .active:after {
   content: "\2796";
-  /* Unicode character for "minus" sign (-) */
+  /* caractere sinal (-) */
+}
+
+footer{
+  margin-top: 10%;
+}
+
+@media (max-width: 650px){/*executa quando largura maxima da tela for ate 650px*/
+  .faq-heading {
+    margin-top: 120px;
+    font-size: 24px;
+  }
+
+  .faq-container{
+    height: 47%;
+    margin-top: 30px;
+  }
+
+.faq-page{
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  align-items: center;
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hr-line{
+  width: 70%;
+  margin: auto;
+}
+
+footer{
+  margin-top: 34%;
+}
+
+
 }
