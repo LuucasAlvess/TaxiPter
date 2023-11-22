@@ -5,6 +5,7 @@
     vertical-align: baseline;
     list-style: none;
     scroll-behavior: smooth;
+    letter-spacing: 1px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
