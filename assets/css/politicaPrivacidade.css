@@ -21,3 +21,22 @@
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+
+
+
+
+    @media (max-width: 650px){/*executa quando largura maxima da tela for ate 650px*/
+.politicaPrivacidade {
+    width: 40vh;
+    text-align: left;
+}
+
+.politicaPrivacidade h2{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+    
+    }

@@ -12,11 +12,14 @@
     <title>Volocopter</title>
 </head>
 <body>
+    
     <header>
         <nav>
             <ul class='nav-bar'>
                 <li class='logo'><a href='#'>
-                    <img src='./assets/images/Logo_Volocopter.png'/>
+                    <a href="./index.html">
+                        <img src='./assets/images/Logo_Volocopter.png'/>
+                    </a>
                 </a>
             </li>
                 <input type='checkbox' id='check' />
@@ -24,7 +27,7 @@
                     <li><a href="./index.html">SOBRE</a></li>
                     <li><a href="./solucoes.html">SOLUÇÕES</a></li>
                     <li><a href="./faq.html">FAQ</a></li>
-                    <a href="#" target="_blank"><button>LOGIN</button></a>
+                    <a href="./login.html" target="_blank"><input class="btn-login-menu" type="button" value="LOGIN"></a>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -42,7 +45,7 @@
         <div class="center">
             
             <p>Nossa principal prioridade é fornecer um serviço muito seguro que seja tão eficiente e confiável quanto revolucionário. Para esse fim, temos trabalhado em estreita colaboração com a Agência da União Europeia para a Segurança da Aviação (EASA) para certificar as nossas aeronaves, garantindo que cumprimos os mais elevados padrões de segurança na aviação. <br> Como pioneiros desta nova forma de mobilidade – e um feito revolucionário da engenharia – pretendemos ser os primeiros a dar-lhe vida. Isso é apoiado por duas coisas que nos tornam líderes neste campo emergente de UAM: nossas aeronaves eVTOL de engenharia interna apresentam a mais recente tecnologia de drones e, com nosso VoloIQ e ampla experiência em vertiport e nosso próprio design VoloPort, criamos um sistema holístico ecossistema em que a aeronave irá operar.</p>
-            <img src="./assets/images/placaDeserto.jpg" alt="">
+            <img src="./assets/images/placaCampo.jpg" alt="">
             </div>
         </div>
           
@@ -53,23 +56,71 @@
 
 
         <footer>
-            <div class="footer-options">
-                <ul>
-                    <li><a href="./index.html">SOBRE</a></li><br>
-                    <li><a href="./solucoes.html">SOLUÇÕES</a></li><br>
-                    <li><a href="./faq.html">FAQ</a></li><br>
-                </ul>
-                    <ul>
-                        <li><a href="./redesSociais.html">REDES SOCIAIS</a></li><br>
-                        <li><a href="./contate-nos.html">CONTATE-NOS</a></li><br>
-                        <li><a href="./politicaPrivacidade.html">POLITICA DE PRIVACIDADE</a></li><br>
-                    </ul>
-            </div>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>Redes Socias</h1>
+                    <p>Acompanhe nossas redes sociais</p>
+    
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+    
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+    
+                        <a href="#" class="footer-link" id="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
 
-            <div>
-                <p>Direitos autorais © 2023 <a href="#">Volocopter</a>. Todos os direitos reservados.</p>
+                        <a href="#" class="footer-link" id="tiktok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="linkedin">
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Site</h3>
+                    </li>
+                    <li>
+                        <a href="./index.html" class="footer-link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="./solucoes.html" class="footer-link">Soluções</a>
+                    </li>
+                    <li>
+                        <a href="./faq.html" class="footer-link">FAQ</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Empresa</h3>
+                    </li>
+                    <li>
+                        <a href="./form.html" class="footer-link">Contate-nos</a>
+                    </li>
+                    <li>
+                        <a href="./politicaPrivacidade.html" class="footer-link">Politica de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div id="footer_copyright">
+                Direitos autorais © 2023 <a href="#">Volocopter</a>. Todos os direitos reservados.
             </div>
         </footer>
+        
         <script src="./assets/js/placasD-C.js"></script>
 </body>
 </html>
