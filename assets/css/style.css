@@ -107,12 +107,12 @@ header{
     color: black;
     background: #DED2B9;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
     width: 65px;
     height: 26px;
     right: 50px;
     position: absolute;
+    font-size: 12px;
 }
 
 .btn-login-menu:hover{
